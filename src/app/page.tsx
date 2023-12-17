@@ -4,6 +4,14 @@
  * root directory of this project.
  */
 
+import { Flex, Text, Button } from '@radix-ui/themes';
+
 export default function Page() {
-  return <h1>Hello, World!</h1>
+  return (
+    <Flex direction="column" gap="2">
+      <Text>Hello from Radix Themes :)</Text>
+      <Button>Let's go</Button>
+    </Flex>
+  );
+
 }

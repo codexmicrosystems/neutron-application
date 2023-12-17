@@ -4,6 +4,10 @@
  * root directory of this project.
  */
 
+import "./globals.css";
+import '@radix-ui/themes/styles.css';
+import { Theme } from '@radix-ui/themes';
+
 export default function RootLayout({
   children,
 }: {
@@ -11,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Theme>
+          {children}
+        </Theme>
+      </body>
     </html>
   );
 }
